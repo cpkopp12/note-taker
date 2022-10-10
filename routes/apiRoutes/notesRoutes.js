@@ -1,12 +1,14 @@
 //INSTANTIATE ROUTER AND IMPORT NOTES FROM DB -------------
 const router = require('express').Router();
 // const { METHODS NEEDED FOR FUNCTIONALITY WITHIN SERVER } = require('../../lib/notes.js');
-const { notes } = require('../../db/db.json');
+const  notes  = require('../../db/db');
 
 //SET UP ROUTES CALLED IN PUBLIC INDEX.JS -------------------
 //route /api/notes get and post
 router.get('/notes', (req, res) => {
-    //going to need to write code for get fetch request
+    //RETURN THE CURRENT NOTES FROM THE db.json
+    console.log(notes);
+    res.json(notes);
 });
 
 router.post('/notes', (req, res) => {
