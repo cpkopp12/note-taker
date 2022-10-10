@@ -1,5 +1,6 @@
 //INSTANTIATE ROUTER AND IMPORT NOTES FROM DB -------------
 const router = require('express').Router();
+// const { METHODS NEEDED FOR FUNCTIONALITY WITHIN SERVER } = require('../../lib/notes.js');
 const { notes } = require('../../db/db.json');
 
 //SET UP ROUTES CALLED IN PUBLIC INDEX.JS -------------------
