@@ -16,3 +16,5 @@ router.post('/notes', (req, res) => {
 router.delete('/notes/:id', (req, res) => {
     //going to need to write code for delete fetch request
 });
+
+module.exports = router;
