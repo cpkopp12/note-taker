@@ -1,3 +1,4 @@
+//DECLARE NOTE VARS
 let noteTitle;
 let noteText;
 let saveNoteBtn;
