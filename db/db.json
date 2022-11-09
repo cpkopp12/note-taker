@@ -1,17 +1,29 @@
 {
-  "notes": [
-    {
-      "title": "Test Title",
-      "text": "Test text"
-    },
-    {
-      "title": "Test Title2",
-      "text": "Test text2"
-    },
+  "notesArray": [
     {
       "title": "new note",
       "text": "lots of text",
+      "id": "0"
+    },
+    {
+      "title": "Test Note 2",
+      "text": "lots of note testing text",
+      "id": "1"
+    },
+    {
+      "title": "note 3",
+      "text": "text for new note\n",
       "id": "2"
+    },
+    {
+      "title": "note 4",
+      "text": "next for testing note 4",
+      "id": "3"
+    },
+    {
+      "title": "newest note",
+      "text": "I think its working!!",
+      "id": "4"
     }
   ]
 }

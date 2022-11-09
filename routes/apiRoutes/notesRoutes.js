@@ -1,7 +1,7 @@
 //INSTANTIATE ROUTER AND IMPORT NOTES FROM DB -------------
 const router = require('express').Router();
 // const { METHODS NEEDED FOR FUNCTIONALITY WITHIN SERVER } = require('../../lib/notes.js');
-const notes  = require('../../db/db');
+const notes   = require('../../db/db');
 const { validateNote, createNewNote } = require('../../lib/notes');
 
 //SET UP ROUTES CALLED IN PUBLIC INDEX.JS -------------------
@@ -13,13 +13,13 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     //going to need to write for post fetch request
-    req.body.id = notes.length.toString();
-    const isNote = validateNote(req.body)
+    req.body.id = notes.notesArray.length.toString();
+    const isNote = validateNote(req.body);
     
     if (!isNote) {
         res.status(400).send('The note is not properly formatted.');
     } else {
-        const note = createNewNote(req.body, notes);
+        const note = createNewNote(req.body, notes.notesArray);
         res.json(note);
         console.log(note);
     }
