@@ -24,6 +24,16 @@
       "title": "newest note",
       "text": "I think its working!!",
       "id": "4"
+    },
+    {
+      "title": "Note 6",
+      "text": "we did it!",
+      "id": "5"
+    },
+    {
+      "title": "To DO",
+      "text": "submit challange",
+      "id": "6"
     }
   ]
 }
