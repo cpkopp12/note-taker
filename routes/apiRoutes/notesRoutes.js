@@ -7,8 +7,6 @@ const  notes  = require('../../db/db');
 //route /api/notes get and post
 router.get('/notes', (req, res) => {
     //RETURN THE CURRENT NOTES FROM THE db.json
-    console.log(notes);
-    res.json(notes);
 });
 
 router.post('/notes', (req, res) => {
